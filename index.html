@@ -52,11 +52,21 @@
 	<input class="form-check-input" type="radio" name="radiovalue" value="2" id="radiovalue2">
 	<label class="form-check-label" for="radiovalue2">bad</label>
 </div>
-  <input type="checkbox" value="good">
-	<input type="checkbox" value="bad">
-	
-  <textarea type="text" placeholder="comment"></textarea>
-	<button type="submit" id="submit">Submit</button>
+<label class="form-label">Choose your Education level </label>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="diploma" id="goodCheck">
+  <label class="form-check-label" for="goodCheck"> Diploma </label>
+</div>
+<div class="form-check">
+	<input class="form-check-input" type="checkbox" value="dgree" id="badCheck">
+	<label class="form-check-label" for="badCheck"> Degree </label>
+	</div>
+	<br/>
+	<div class="form-floating">
+	<label  for="comment">Do you have additional Comment? </label>
+  <textarea class="form-control" type="text" placeholder="comment" id="comment" ></textarea>
+	</div>
+	<button class="btn btn-primary" type="submit" id="submit">Submit</button>
 	</form>
    
    </div>
