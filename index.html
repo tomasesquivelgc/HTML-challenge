@@ -24,10 +24,9 @@
 <div class="container">
 	<!-- Content here -->
 
-	<h1 id="title" class="form-control"> Form Title </h1>
-	<p class="form-control" id="description">Short description</p>
+	<h1 id="title" class="display-2"> Survey form  </h1>
+	<p class="display-4" id="description">what do you think about this survey?</p>
 <div class="form-group">
-   
    <form id ="survey-form">
 	<label  class="form-label"  id="name-label">Name</label>
     <input  class="form-control" id="name" type="text" required placeholder="name">
@@ -35,16 +34,28 @@
     <input  class="form-control" id="email" type="email" required placeholder="email">
 	<label  class="form-label" id="number-label">Number</label>
 	<input  class="form-control" id="number" type="number" min="8" max="9" placeholder="number">
-	<select  id="dropdown">
-	<option>a</option>
-	<option>b</option>
-	<option>c</option>
+	
+  <label class="form-label">what's your gender?</label>
+  <select  id="dropdown" class="form-control">
+	<option>Female</option>
+	<option>Male</option>
+	<option>Other</option>
 	</select>
-	<input  type="radio" name="max" value="1">
-	<input type="radio" name="max" value="2">
-	<input type="checkbox" value="good">
+ <br/>
+
+ <label class="form-label">How is this survey going?</label>
+  <div class="form-check">
+	<input class="form-check-input" type="radio" name="radiovalue" value="1" id="radiovalue1">
+  <label class="form-check-label" for="radiovalue1">good</label>
+</div>
+<div class="form-check">
+	<input class="form-check-input" type="radio" name="radiovalue" value="2" id="radiovalue2">
+	<label class="form-check-label" for="radiovalue2">bad</label>
+</div>
+  <input type="checkbox" value="good">
 	<input type="checkbox" value="bad">
-	<textarea type="text" placeholder="comment"></textarea>
+	
+  <textarea type="text" placeholder="comment"></textarea>
 	<button type="submit" id="submit">Submit</button>
 	</form>
    
